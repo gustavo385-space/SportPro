@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportsPro — Landing</title>
+    <!-- Tailwind CDN para estilos rápidos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <header class="fixed w-full bg-black text-gray-100 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center space-x-6">
+            <div class="text-2xl font-bold text-yellow-400">SportsPro</div>
+            <nav class="hidden lg:flex space-x-6">
+              <a href="#inicio" class="hover:text-yellow-400">Inicio</a>
+              <a href="#productos" class="hover:text-yellow-400">Productos</a>
+              <a href="#categorias" class="hover:text-yellow-400">Categorías</a>
+              <a href="#ofertas" class="hover:text-yellow-400">Ofertas</a>
+              <a href="#contacto" class="hover:text-yellow-400">Contacto</a>
+            </nav>
+          </div>
+
+          <div class="hidden lg:flex items-center space-x-4">
+            <button title="Buscar" class="hover:text-yellow-400">🔍</button>
+            <button title="Cuenta" class="hover:text-yellow-400">👤</button>
+            <button id="cart-btn" class="relative hover:text-yellow-400">
+              🛒
+              <span id="cart-count" class="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs rounded-full h-5 w-5 flex items-center justify-center font-bold">3</span>
+            </button>
+          </div>
+
+          <button id="mobile-menu-btn" class="lg:hidden text-gray-300">☰</button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden lg:hidden bg-black/90 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+          <nav class="flex flex-col space-y-3">
+            <a href="#inicio" class="hover:text-yellow-400">Inicio</a>
+            <a href="#productos" class="hover:text-yellow-400">Productos</a>
+            <a href="#categorias" class="hover:text-yellow-400">Categorías</a>
+            <a href="#ofertas" class="hover:text-yellow-400">Ofertas</a>
+            <a href="#contacto" class="hover:text-yellow-400">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-28">
+      <!-- HERO -->
+      <section id="inicio" class="pt-12 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+        <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">
+              📈 <span>Nueva Colección 2025</span>
+            </div>
+
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tight">Supera Tus Límites con el <span class="text-yellow-500">Mejor Equipamiento</span></h1>
+
+            <p class="text-lg text-gray-600">Descubre nuestra selección premium de productos deportivos diseñados para atletas que buscan excelencia y rendimiento superior.</p>
+
+            <div class="flex gap-4">
+              <a href="#productos" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">Explorar Productos →</a>
+              <a href="#ofertas" class="border border-gray-200 bg-white px-6 py-3 rounded-lg font-semibold hover:text-yellow-500">Ver Ofertas</a>
+            </div>
+
+            <div class="flex items-center space-x-6 pt-4 text-gray-700">
+              <div>
+                <div class="text-2xl font-bold">500+</div>
+                <div class="text-sm">Productos</div>
+              </div>
+              <div class="h-8 w-px bg-gray-300"></div>
+              <div>
+                <div class="text-2xl font-bold">50K+</div>
+                <div class="text-sm">Clientes</div>
+              </div>
+              <div class="h-8 w-px bg-gray-300"></div>
+              <div>
+                <div class="text-2xl font-bold">98%</div>
+                <div class="text-sm">Satisfacción</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+              <img src="https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Productos deportivos" class="w-full h-96 object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="py-12 bg-yellow-500">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-900">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center">🚚</div>
+            <div>
+              <h4 class="font-bold">Envío Gratis</h4>
+              <p class="text-sm">En pedidos superiores a $50</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center">🛡️</div>
+            <div>
+              <h4 class="font-bold">Garantía Extendida</h4>
+              <p class="text-sm">2 años en todos los productos</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center">💳</div>
+            <div>
+              <h4 class="font-bold">Pago Seguro</h4>
+              <p class="text-sm">Múltiples métodos de pago</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-white/30 rounded-full flex items-center justify-center">🎧</div>
+            <div>
+              <h4 class="font-bold">Soporte 24/7</h4>
+              <p class="text-sm">Asistencia personalizada</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section id="categorias" class="py-12 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Categorías Principales</h2>
+            <p class="text-gray-400">Explora nuestra amplia gama de productos organizados por disciplina deportiva</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="rounded-2xl overflow-hidden bg-gray-800">
+              <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fitness" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">Fitness & Gym</h3>
+                <p class="text-sm text-gray-400">Equipamiento profesional para tu entrenamiento</p>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden bg-gray-800">
+              <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ciclismo" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">Ciclismo</h3>
+                <p class="text-sm text-gray-400">Bicicletas y accesorios de alta gama</p>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden bg-gray-800">
+              <img src="https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Running" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">Running</h3>
+                <p class="text-sm text-gray-400">Calzado y ropa técnica para corredores</p>
+              </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden bg-gray-800">
+              <img src="https://images.pexels.com/photos/618775/pexels-photo-618775.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Outdoor" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-bold">Deportes al Aire Libre</h3>
+                <p class="text-sm text-gray-400">Todo para tus aventuras outdoor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section id="productos" class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Productos Destacados</h2>
+            <p class="text-gray-600">Selección curada de nuestros productos más populares</p>
+          </div>
+
+          <div id="products-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Productos generados por script.js -->
+          </div>
+
+          <div class="text-center mt-8">
+            <button class="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700">Ver Todos los Productos</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFERS -->
+      <section id="ofertas" class="py-12 bg-gray-950 text-white">
+        <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-6">
+          <div class="rounded-3xl p-8 bg-gradient-to-br from-yellow-500 to-amber-500 text-gray-900">
+            <div class="mb-4 inline-flex items-center gap-2">🔥 <strong>Oferta Flash</strong></div>
+            <h3 class="text-2xl font-bold mb-2">Hasta 50% OFF</h3>
+            <p class="mb-4">En toda la colección de running</p>
+            <button class="bg-gray-900 text-yellow-500 px-6 py-3 rounded-lg">Comprar Ahora</button>
+          </div>
+
+          <div class="rounded-3xl p-8 bg-gradient-to-br from-gray-800 to-gray-900">
+            <div class="mb-4 inline-flex items-center gap-2">⭐ <strong>Exclusivo Online</strong></div>
+            <h3 class="text-2xl font-bold mb-2">3x2 en Accesorios</h3>
+            <p class="mb-4">Lleva 3 productos y paga solo 2</p>
+            <button class="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg">Ver Accesorios</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-center mb-6">
+          <h2 class="text-3xl font-bold">Lo Que Dicen Nuestros Clientes</h2>
+          <p class="text-gray-600">Miles de atletas confían en nosotros</p>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-900 text-white rounded-2xl p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <div class="font-bold">María González</div>
+                <div class="text-sm text-gray-400">Maratonista</div>
+              </div>
+            </div>
+            <p class="text-gray-300">La calidad de los productos es excepcional. Las zapatillas que compré superaron mis expectativas.</p>
+          </div>
+
+          <div class="bg-gray-900 text-white rounded-2xl p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=200" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <div class="font-bold">Carlos Ruiz</div>
+                <div class="text-sm text-gray-400">Entrenador</div>
+              </div>
+            </div>
+            <p class="text-gray-300">Como profesional, recomiendo SportsPro a todos mis clientes. Productos de primera calidad.</p>
+          </div>
+
+          <div class="bg-gray-900 text-white rounded-2xl p-6">
+            <div class="flex items-center gap-4 mb-4">
+              <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200" class="w-12 h-12 rounded-full object-cover">
+              <div>
+                <div class="font-bold">Ana Martínez</div>
+                <div class="text-sm text-gray-400">Ciclista Amateur</div>
+              </div>
+            </div>
+            <p class="text-gray-300">Compré mi bicicleta hace 6 meses y estoy encantada. El asesoramiento fue fundamental.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="py-12 bg-gradient-to-r from-yellow-500 to-amber-500">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <h2 class="text-2xl font-bold text-gray-900 mb-2">Únete a Nuestra Comunidad</h2>
+          <p class="text-gray-800 mb-6">Recibe ofertas exclusivas, tips y novedades directamente en tu inbox</p>
+
+          <form id="newsletter-form" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-3">
+            <input id="newsletter-email" type="email" placeholder="Tu correo electrónico" class="flex-1 px-4 py-3 rounded-lg focus:outline-none" required>
+            <button type="submit" class="bg-gray-900 text-yellow-500 px-6 py-3 rounded-lg">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="contacto" class="bg-gray-900 text-gray-300 py-8 mt-8">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2">SportsPro</h3>
+            <p class="text-gray-400 text-sm">Tu tienda especializada en productos deportivos de alta calidad.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-2">Tienda</h4>
+            <ul class="text-sm space-y-2">
+              <li>Todos los Productos</li>
+              <li>Novedades</li>
+              <li>Ofertas</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-2">Información</h4>
+            <ul class="text-sm space-y-2">
+              <li>Sobre Nosotros</li>
+              <li>Envíos y Devoluciones</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-white mb-2">Contacto</h4>
+            <p class="text-sm">Av. Principal 123 · +34 900 123 456 · info@sportspro.com</p>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-6 border-t border-gray-800 pt-4 text-sm text-gray-400 flex justify-between">
+          <div>© 2025 SportsPro. Todos los derechos reservados.</div>
+          <div class="flex items-center gap-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa" class="h-5 opacity-60">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard" class="h-5 opacity-60">
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- Panel del carrito (off-canvas) -->
+    <aside id="cart-panel" class="fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-2xl transform translate-x-full transition-transform z-50">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 class="text-lg font-bold">Tu Carrito</h3>
+        <button id="cart-close" class="text-gray-600">✕</button>
+      </div>
+      <div id="cart-contents" class="p-4 overflow-y-auto" style="height:calc(100% - 160px)">
+        <!-- Items generados dinámicamente -->
+      </div>
+      <div class="p-4 border-t">
+        <div class="flex items-center justify-between mb-4">
+          <div class="text-sm text-gray-600">Subtotal</div>
+          <div id="cart-subtotal" class="text-lg font-bold">$0.00</div>
+        </div>
+        <div class="flex gap-2">
+          <button id="clear-cart" class="flex-1 bg-gray-200 text-gray-800 px-4 py-2 rounded">Vaciar</button>
+          <button id="checkout-btn" class="flex-1 bg-yellow-500 text-black px-4 py-2 rounded font-semibold">Pagar</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
